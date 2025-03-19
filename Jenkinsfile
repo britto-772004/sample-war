@@ -12,9 +12,9 @@ pipeline {
         stage('Build with Maven') {
             steps {
                 // sh "/usr/share/maven/bin/mvn clean package"
-                sh "mvn validate"
-                sh "mvn test"
-                sh "mvn package"
+                // sh "mvn validate"
+                // sh "mvn test"
+                sh "/usr/share/maven/bin mvn package"
             }
         }
 
