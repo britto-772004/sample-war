@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git url: "https://github.com/britto-772004/sample-war.git"
+                git branch: "dev" , url: "https://github.com/britto-772004/sample-war.git"
             }
         }
 
